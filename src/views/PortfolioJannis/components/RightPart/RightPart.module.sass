@@ -1,0 +1,32 @@
+@import "./../../sass/variables"
+
+.RightPart
+  position: relative
+  height: min-content
+  min-height: 200vh
+  width: 100%
+  color: white
+  display: grid
+  grid-template-columns: 7fr 4fr
+  grid-column: 2/3
+  grid-row: 2/4
+  z-index: 5
+  @include media-break(1200px, max)
+    background-color: black
+    justify-items: center
+    grid-column: 1/2
+    grid-row: initial
+    height: 100%
+    grid-template-columns: 1fr
+
+
+//.RightPart::before
+//  @include media-break(1200px, max)
+//    content: ''
+//    position: absolute
+//    top: 0
+//    left: 0
+//    width: 100%
+//    height: 100%
+//    background-image: url("./../../images/nasa.png")
+//    z-index: -1

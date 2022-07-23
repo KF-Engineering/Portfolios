@@ -1,0 +1,165 @@
+@import "src/views/PortfolioDominik/sass/variables"
+
+.hidden
+  span
+    background-color: transparent !important
+
+.Tree
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  padding-top: 12vh
+  padding-right: 3vw
+  padding-left: 2vw
+  flex-direction: column
+
+  @include media-break($break1200px, max)
+    background-image: url("./../../../images/NASA2TABLET.png")
+
+    padding-left: 25vw
+    padding-right: 25vw
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    padding-bottom: 10vw
+  @include media-break($break500px, max)
+    background-image: url("./../../../images/NASABG2.png")
+    padding-left: 15vw
+    padding-right: 15vw
+  @include media-break(400px, max)
+    padding-left: 10vw
+    padding-right: 10vw
+
+  .topContainer
+    position: relative
+    width: 100%
+
+  .name
+    width: 100%
+    
+    font-size: 2rem
+    font-weight: 400
+    letter-spacing: 1rem
+    border-top: 0.3rem white solid
+    border-bottom: 0.3rem white solid
+    display: flex
+    align-items: center
+    height: min-content
+    padding: 0.5rem 0
+    @include media-break($break1200px, max)
+      font-size: calc(1.5rem + 1.5vw)
+  ////////////////////////////////
+  .VertLine
+    width: 100%
+    display: grid
+    grid-template-columns: 30% 0.3rem 1fr
+    justify-items: center
+
+    span
+      grid-column: 2/3
+      background-color: white
+      height: 5vh
+      width: 100%
+
+  .VertLine1
+    span
+      height: 3vh
+
+  .VertLine2
+    span
+      height: 3vh
+
+  .VertLine3
+    span
+      height: 3vh
+
+  .VertLine4
+    span
+      height: 5vh
+
+  .VertLine5
+    span
+      transition: all 0.75s
+      height: 13vh
+  //background-color: transparent
+
+  .VertLineLast
+    span
+      height: 10vh
+
+    div
+      grid-column: 2/3
+      background-color: white
+      width: 2.5rem
+      height: 2.5rem
+      border-radius: 50%
+
+
+  /////////////////////////////////////
+  .container
+    width: 100%
+    display: grid
+    grid-template-columns: 30% 0.3rem 1fr
+
+    h2
+      padding-right: 2rem
+      
+      font-weight: 400
+      letter-spacing: 1rem
+      display: flex
+      align-items: center
+      font-size: 1.8rem
+      height: 3rem
+      justify-content: flex-end
+      @include media-break($break1200px, max)
+        font-size: calc(1.5rem + 1vw)
+
+    section
+      display: flex
+      flex-direction: column
+      align-items: center
+      height: 100%
+
+      span:nth-of-type(1)
+        background-color: white
+        height: 5%
+        width: 100%
+
+      div
+        height: 2.5rem
+        width: 2.5rem
+        border: 0.3rem solid white
+        border-radius: 50%
+
+      span:nth-of-type(2)
+        background-color: white
+        flex-grow: 1
+        width: 100%
+
+
+    div
+      padding-left: 10%
+
+      h1
+        
+        padding: 0.5rem 0
+        font-size: 2rem
+        font-weight: 400
+        letter-spacing: 1.3rem
+        text-align: center
+        border-top: white 0.1rem solid
+        @include media-break($break1200px, max)
+          font-size: calc(1.5rem + 1vw)
+      p
+        color: #4F4F4F
+        
+        font-size: 1rem
+        font-weight: 400
+        line-height: 1rem
+        @include media-break($break1200px, max)
+          font-size: calc(0.7rem + 1vw)
+          line-height: calc(0.7rem + 1vw)
+
+
+

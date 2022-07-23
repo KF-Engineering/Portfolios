@@ -1,0 +1,62 @@
+@import "src/views/PortfolioDominik/sass/variables"
+.IconGroup
+  width: 75%
+  min-height: 30vh
+  display: grid
+  grid-template-rows: 1fr 4fr
+  margin-bottom: 20vh
+
+  @include media-break($break1200px, max)
+    margin-bottom: 5vh
+
+    width: 60%
+  @include media-break($break768px, max)
+
+    width: 75%
+  @include media-break($break500px, max)
+    width: 85%
+
+  h1
+    padding: 0.5rem 0
+    
+    font-size: calc(2rem + 1vw)
+    font-weight: 400
+    letter-spacing: 1.5rem
+    //height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    border-bottom: white 0.3rem solid
+    border-top: white 0.3rem solid
+    color: #8C2B2B
+    @include media-break($break1200px, max)
+      font-size: calc(3rem + 1.5vw)
+
+  .container
+    width: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+
+    .cell
+      display: flex
+      justify-content: center
+      align-items: center
+      min-width: 33%
+      min-height: 30%
+      margin: 3% 0
+      @include media-break($break1200px, max)
+        margin: 5% 0
+      @include media-break($break768px, max)
+        margin: 0% 0
+
+
+      span
+        border: white 0.3rem solid
+        border-radius: 50%
+        width: calc(4rem + 2vw)
+        height: calc(4rem + 2vw)
+        @include media-break($break1200px, max)
+          width: calc(3rem + 5vw)
+          height: calc(3rem + 5vw)

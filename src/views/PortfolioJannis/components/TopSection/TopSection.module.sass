@@ -1,0 +1,83 @@
+$lineHeight: 0.5rem
+@import "./../../sass/variables"
+
+.TopSection::after
+  content: ''
+  position: absolute
+  background-color: #8C2B2B
+  height: 0.2rem
+  width: 60%
+  top: 99.7%
+  left: calc(16% + 2.2vw)
+  @include media-break($break1200px,max)
+    left: 0
+    width: 100%
+    height: 0.2rem
+    z-index: 15
+.triangle
+  position: absolute
+  left: 0
+  top: 99.7%
+  width: 20%
+  height: 20vh
+  background-color: #141414
+  clip-path: polygon(0 0, calc(100%) 0, 0 calc(100%))
+
+.triangle::after
+  content: ''
+  position: absolute
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  background-color: #8C2B2B
+  clip-path: polygon(calc(100% - 0.3rem) -0.1rem, 100% .3rem, .3rem 100%, -0.1rem calc(100% - 0.3rem))
+
+.TopSection
+  background-color: #141414
+  width: 100%
+  height: 30vh
+  position: relative
+  color: white
+  
+  display: flex
+  justify-content: center
+  align-items: flex-end
+  grid-column: 2/3
+  grid-row: 1/2
+  @include media-break($break1200px, max)
+    grid-column: 1/2
+    grid-row: initial
+    height: 100%
+
+  //align-items: center
+
+  section
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    height: 60%
+    @include media-break($break1200px, max)
+      justify-content: flex-end
+
+    h1
+      font-size: calc(2rem + 1.5vw)
+      font-weight: 700
+      line-height: 44px
+      letter-spacing: 0.4em
+
+      span
+        color: #8C2B2B
+
+
+    h2
+      text-align: center
+      font-size: calc(1rem + 1vw)
+      font-weight: 200
+      color: #8C2B2B
+      @include media-break($break1200px, max)
+        display: none
+
+
+

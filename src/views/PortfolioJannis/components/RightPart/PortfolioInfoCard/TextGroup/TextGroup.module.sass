@@ -1,0 +1,37 @@
+@import "src/views/PortfolioDominik/sass/variables"
+
+.TextGroup
+  width: 75%
+  @include media-break($break1200px, max)
+    width: 60%
+  @include media-break($break768px, max)
+    width: 75%
+  @include media-break($break500px, max)
+    width: 85%
+
+  h1
+    padding: 0.5rem 0
+    
+    font-size: calc(2rem + 1vw)
+    font-weight: 400
+    letter-spacing: 1.5rem
+    display: flex
+    justify-content: center
+    align-items: center
+    border-bottom: white 0.3rem solid
+    border-top: white 0.3rem solid
+    color: #8C2B2B
+    @include media-break($break1200px, max)
+      font-size: calc(3rem + 1.5vw)
+
+  div
+    padding: 3% 7% 0
+
+    p
+      
+      font-size: calc(1rem + 0.7vw)
+      font-weight: 400
+      @include media-break($break1200px, max)
+        font-size: calc(1rem + 1.2vw)
+
+

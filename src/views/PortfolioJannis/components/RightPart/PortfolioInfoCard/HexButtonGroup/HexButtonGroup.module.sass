@@ -1,0 +1,85 @@
+@import "src/views/PortfolioDominik/sass/variables"
+
+.HexButtonGroup
+  width: 75%
+  display: flex
+  flex-direction: column
+  min-height: 35vh
+  margin-bottom: 20vh
+  @include media-break($break1200px, max)
+    min-height: calc(20rem + 30vw)
+    //min-height: 60vh
+    margin-bottom: 0
+
+    width: 60%
+  @include media-break($break768px, max)
+    //min-height: 45vh
+
+    width: 75%
+  @include media-break($break500px, max)
+    width: 85%
+    //min-height: 30vh
+
+
+  h1
+    padding: 0.5rem 0
+    
+    font-size: calc(2rem + 1vw)
+    font-weight: 400
+    letter-spacing: 1.5rem
+    //height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    border-bottom: white 0.3rem solid
+    border-top: white 0.3rem solid
+    color: #8C2B2B
+    @include media-break($break1200px, max)
+      font-size: calc(3rem + 1.5vw)
+
+  .container
+    position: relative
+    padding-top: 3%
+    flex-grow: 1
+
+    .cell
+      position: absolute
+      background-color: #C4C4C4
+      width: 32%
+      height: 50%
+      //font-size: calc(7.5vw)
+
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+      @include media-break($break1200px, max)
+        font-size: calc(19vw)
+        width: 1em
+        height: 1.1em
+
+      @include media-break($break768px, max)
+        font-size: calc(23.5vw)
+
+      @include media-break($break500px, max)
+        font-size: calc(27vw)
+
+    .cell:nth-child(2)
+      transform: translate(105%, 0)
+
+    .cell:nth-child(3)
+      transform: translate(210%, 0)
+
+    .cell:nth-child(4)
+      transform: translate(52%, 79%)
+
+    .cell:nth-child(5)
+      transform: translate(157%, 79%)
+
+//.cell:nth-child(2)
+//  left: 33%
+//.cell:nth-child(3)
+//  left: 66%
+//.cell:nth-child(4)
+//  top: 53%
+//  left: 16%
+//.cell:nth-child(5)
+//  top: 53%
+//  left: 49%

@@ -1,0 +1,41 @@
+@import "src/views/PortfolioDominik/sass/variables"
+.PortfolioInfoCard
+  //display: flex
+  //align-items: flex-end
+  //justify-content: space-between
+  //flex-direction: column
+  width: 100%
+  height: 100%
+  padding-right: 2vw
+  padding-top: 12vh
+  display: grid
+  grid-template-rows: min-content min-content min-content 10vh
+  justify-items: end
+  gap: 5vh
+  @include media-break($break1200px, max)
+    background-image: url("./../../../images/NASA1TABLET.png")
+
+    padding-right: 0
+    align-content: space-evenly
+    padding-top: 10vh
+    justify-items: center
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    gap: 10vh
+  @include media-break($break768px, max)
+  @include media-break($break500px, max)
+    background-image: url("./../../../images/NASAPHONE1.png")
+    gap: 2vh
+
+
+//.container
+//  width: 100%
+//  display: flex
+//  min-height: 100vh
+//  flex-direction: column
+//  justify-content: center
+//  gap: 10vh
+//  align-items: flex-end
+//  @include media-break(1200px, max)
+//    align-items: center

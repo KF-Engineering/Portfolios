@@ -1,0 +1,8 @@
+$break1200px: 1200px
+$break768px: 768px
+$break500px: 500px
+
+@mixin media-break($width,$size)
+  @media screen and (#{ $size }-width: $width)
+    @content
+
